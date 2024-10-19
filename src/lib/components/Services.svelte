@@ -3,7 +3,7 @@
 </script>
 
 <div class="px-9 py-16 bg-iris-3">
-	<h3 class="caveat-text text-center font-bold text-4xl text-iris-12 mb-16">
+	<h3 class="caveat text-center font-bold text-4xl text-iris-12 mb-16">
 		What Services Do I Offer?
 	</h3>
 	<div class="mb-12">

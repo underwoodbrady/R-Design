@@ -3,7 +3,8 @@
 	import Header from '$lib/components/Header.svelte';
 	import '../app.css';
 </script>
-test
 <Header />
-<slot />
+<main class="mt-[92px]">
+	<slot />
+</main>
 <Footer />
