@@ -1,9 +1,19 @@
 <script lang="ts">
 	export let options: string[];
 	export let selectedOption: string = "";
+    export let label:string = "";
+    export let placeholder:string = ""
+    export let required:boolean = false;
 </script>
 
-<select aria-label="Select Service" name="services" class="px-4 py-2 rounded-[4px] bg-blue-100 border border-black-600 outline-none text-black-1200">
+<div class="flex flex-col w-full">
+    <label class="text-sm" for={label}>
+        {label}
+        {#if required}
+            <span class="text-black-11">(required)</span>
+        {/if}
+    </label>
+<select aria-label="Select Option" {placeholder} name="reference" class="py-sm px-md border border-black-5 rounded-sm outline-none">
 	{#each options as option}
 		{#if selectedOption == option}
 			<option value={option} selected>{option}</option>
@@ -12,3 +22,4 @@
 		{/if}
 	{/each}
 </select>
+</div>
