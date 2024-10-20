@@ -15,10 +15,11 @@
 			scrollY = window.scrollY;
 			if (scrollY > 92 && !headerDivWhite) {
 				headerDiv.style.backgroundColor = '#fcfefd';
+                headerDiv.style.borderBottomWidth = '1px'
 				headerDivWhite = true;
 			} else if (scrollY < 92 && headerDivWhite) {
 				headerDiv.style.backgroundColor = 'transparent';
-
+                headerDiv.style.borderBottomWidth = '0px'
 				headerDivWhite = false;
 			}
 		};
@@ -33,10 +34,10 @@
 	});
 </script>
 
-<header class="fixed left-0 top-0 w-full z-20 px-xl h-[92px] transition-colors duration-250" bind:this={headerDiv}>
+<header class="fixed left-0 top-0 w-full z-20 px-xl h-[92px] transition-colors duration-250 border-b-primary-5" bind:this={headerDiv}>
 	<nav class="flex-center justify-between w-full h-full">
 		<a href="/">
-			<img src="/Logo.png" alt="Company Logo" class="w-32 mb-sm" />
+			<img src="/LogoSVG.svg" alt="Company Logo" class="w-32 mb-sm" />
 		</a>
 		<ul class="flex-center space-x-xl font-medium">
 			<li

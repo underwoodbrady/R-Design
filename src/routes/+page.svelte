@@ -1,12 +1,12 @@
 <script>
+	import BookConsultation from '$lib/components/BookConsultation.svelte';
 	import Gallery from '$lib/components/Gallery.svelte';
 	import Hero from '$lib/components/Hero.svelte';
-	import RecentProjects from '$lib/components/RecentProjects.svelte';
 	import Services from '$lib/components/Services.svelte';
 </script>
 
 <Hero />
-<div class="px-xl py-3xl bg-black-1 max-w-screen-lg mx-auto">
+<div class="px-xl py-3xl mb-4xl bg-white max-w-screen-lg mx-auto">
 	<h3 class="text-black-12 text-4xl marcellus mb-lg">About Us</h3>
 	<p class="text-lg mb-xl">
 		We are a full-service seasonal staging and design team bringing the magic of the holidays to
@@ -34,5 +34,6 @@
 	</ol>
 </div>
 <Gallery/>
-<Services />
-<RecentProjects />
+<BookConsultation/>
+<!-- <Services /> -->
+<!-- <RecentProjects /> -->

@@ -7,7 +7,7 @@
 
 </script>
 
-<footer class="w-full flex flex-col items-center pt-12 pb-5 px-6 bg-mauve-12 crimson-text">
+<footer class="w-full flex flex-col items-center pt-12 pb-5 px-6 bg-primary-12 crimson-text">
     <div class="flex flex-col items-center space-y-1 text-mauve-3">
         <Up/>
         <p class=" font-semibold">Back To Top</p>
