@@ -48,8 +48,7 @@
             </div>
         </div>
     </div>
-    <div class="w-full h-[1px] bg-primary-9 mt-3xl mb-lg"/>
-    <div>
+    <div class="mt-3xl">
         <p class="text-primary-9 text-sm">Copyright © 2024-2025, Spruce Seasonal Staging And Decor</p>
     </div>
   
