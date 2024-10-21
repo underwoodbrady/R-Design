@@ -11,7 +11,7 @@
             <img src="/tree8.png" alt="Tree Thing" class="absolute inset-0 w-full h-full object-cover"/>
             <div class="absolute w-full h-full bg-black/45 z-10"/>
         </div>
-        <div class="reative z-20 w-full md:w-7/12 text-center md:text-left">
+        <div class="relative z-20 w-full md:w-7/12 text-center md:text-left">
             <h2 class="text-accent-7 md:text-accent-11 text-lg md:text-2xl font-medium mb-sm md:mb-md">
                 Servicing The Greater Seattle Area
             </h2>
@@ -36,7 +36,7 @@
             </div>
         </div>
         <div
-            class="w-6/12 md:w-5/12 max-h-[520px] overflow-hidden hidden md:flex items-center justify-center md:justify-end mb-2xl md:mb-0"
+            class="relative z-20 w-6/12 md:w-5/12 max-h-[520px] overflow-hidden hidden md:flex items-center justify-center md:justify-end mb-2xl md:mb-0"
         >
             <img src="/tree8.png" alt="Decorated Christmas Tree" class="object-cover" />
         </div>
