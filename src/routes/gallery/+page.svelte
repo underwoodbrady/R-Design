@@ -6,7 +6,7 @@
 	let selectedOption: number = 0;
 </script>
 
-<div class="px-xl py-3xl">
+<div class="px-xl py-3xl max-w-screen-xl mx-auto">
 	<h3 class="text-primary-12 text-4xl marcellus mb-2xl">Gallery</h3>
 	<div class="flex justify-between space-x-3xl">
 		<div class="whitespace-nowrap">

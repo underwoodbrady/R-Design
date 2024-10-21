@@ -39,7 +39,7 @@
 	class="fixed left-0 top-0 w-full z-20 px-xl h-[92px] transition-colors duration-250 border-b-primary-5"
 	bind:this={headerDiv}
 >
-	<nav class="flex-center justify-between w-full h-full">
+	<nav class="flex-center justify-between w-full h-full max-w-screen-xl mx-auto">
 		<a href="/">
 			<img src="/LogoSVG.svg" alt="Company Logo" class="w-32 mb-sm" />
 		</a>

@@ -4,7 +4,7 @@
 	import '../app.css';
 </script>
 <Header />
-<main class="mt-[92px]">
+<main class="mt-[92px] relative">
 	<slot />
 </main>
 <Footer />

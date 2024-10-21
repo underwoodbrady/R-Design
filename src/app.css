@@ -6,6 +6,7 @@ body {
 	background-color: theme('colors.primary.2');
 	color: theme('colors.black.12');
 	font-family: "DM Sans";
+	overflow-x: hidden;
 }
 
 .dm-sans {

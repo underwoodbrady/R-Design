@@ -7,9 +7,23 @@ import Instagram from 'virtual:icons/mdi/instagram';
 	import InputLong from "./InputLong.svelte";
 	import InputDropdown from "./InputDropdown.svelte";
 </script>
-<div class="px-xl py-3xl" id = "bookconsultation">
+<div class="px-xl py-3xl max-w-screen-xl mx-auto" id = "bookconsultation">
     <h3 class="text-primary-12 text-4xl marcellus mb-2xl">Book A Consultation</h3>
     <div class="flex flex-col space-y-2xl md:space-y-0 md:flex-row md:space-x-2xl justify-between">
+        <form class="flex flex-col space-y-md flex-1">
+            <div class="flex-center flex-col md:flex-row space-y-md md:space-y-0 md:space-x-md">
+                <Input label="First Name" placeholder="First Name" required/>
+                <Input label="Last Name" placeholder="Last Name" required/>
+            </div>
+            <Input label="Email" placeholder="Enter Email" required/>
+            <Input label="Phone" placeholder="Enter Phone"/>
+            <InputLong label="Tell Us What You Are Hoping For!" placeholder="" required/>
+            <InputDropdown label="How Did You Hear About Us?" placeholder="Select Option" options={['Select An Option', 'Social Media', 'Word Of Mouth', 'Google Search', 'Other']}/>
+            <div class="mx-auto pt-md">
+
+                <Button>Submit Form</Button>
+            </div>
+        </form>
         <div class="max-w-sm ">
             <img src='/LogoSVG.svg' class="w-32 mb-xl"/>
             <!-- <h4 class="font-semibold mb-md text-lg">Spruce - Seasonal Staging And Decor</h4> -->
@@ -30,20 +44,7 @@ import Instagram from 'virtual:icons/mdi/instagram';
             </div>
         </div>
     
-        <form class="flex flex-col space-y-md flex-1">
-            <div class="flex-center flex-col md:flex-row space-y-md md:space-y-0 md:space-x-md">
-                <Input label="First Name" placeholder="First Name" required/>
-                <Input label="Last Name" placeholder="Last Name" required/>
-            </div>
-            <Input label="Email" placeholder="Enter Email" required/>
-            <Input label="Phone" placeholder="Enter Phone"/>
-            <InputLong label="Tell Us What You Are Hoping For!" placeholder="" required/>
-            <InputDropdown label="How Did You Hear About Us?" placeholder="Select Option" options={['Select An Option', 'Social Media', 'Word Of Mouth', 'Google Search', 'Other']}/>
-            <div class="mx-auto pt-md">
-
-                <Button>Submit Form</Button>
-            </div>
-        </form>
+   
     </div>
   
 </div>
