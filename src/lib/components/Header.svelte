@@ -3,6 +3,7 @@
 	import Button from './Button.svelte';
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
 
 	$: currentPage = $page.url.pathname;
 
@@ -53,11 +54,11 @@
 			</li>
 			<li
 				class="text-primary-12 hover:text-primary-11 transition-colors duration-100 {currentPage ==
-				'/portfolio'
+				'/gallery'
 					? ' border-b-2 border-primary-11'
 					: ''}"
 			>
-				<a href="/portfolio">Portfolio</a>
+				<a href="/gallery">Gallery</a>
 			</li>
 			<li
 				class="text-primary-12 hover:text-primary-11 transition-colors duration-100 {currentPage ==
@@ -77,7 +78,13 @@
 			</li>
 		</ul>
 		<div class="hidden md:flex-center">
-			<Button>Hire Us</Button>
+			<Button
+				onClick={() => {
+					goto('/').then(() => {
+						document.getElementById('bookconsultation')?.scrollIntoView();
+					});
+				}}>Hire Us</Button
+			>
 		</div>
 		<nav class="block lg:hidden">
 			<MenuIcon class="text-black-11 w-6 h-6" />

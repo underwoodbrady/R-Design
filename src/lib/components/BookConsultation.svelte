@@ -7,12 +7,13 @@ import Instagram from 'virtual:icons/mdi/instagram';
 	import InputLong from "./InputLong.svelte";
 	import InputDropdown from "./InputDropdown.svelte";
 </script>
-<div class="px-xl py-3xl">
+<div class="px-xl py-3xl" id = "bookconsultation">
     <h3 class="text-primary-12 text-4xl marcellus mb-2xl">Book A Consultation</h3>
     <div class="flex flex-col space-y-2xl md:space-y-0 md:flex-row md:space-x-2xl justify-between">
         <div class="max-w-sm ">
-            <h4 class="font-semibold mb-md text-lg">Spruce - Seasonal Staging And Decor</h4>
-            <p class="text-black-11 mb-lg">We are a full-service seasonal staging and design team bringing the magic of the holidays to your home or office</p>
+            <img src='/LogoSVG.svg' class="w-32 mb-xl"/>
+            <!-- <h4 class="font-semibold mb-md text-lg">Spruce - Seasonal Staging And Decor</h4> -->
+            <!-- <p class="text-black-11 mb-lg">We are a full-service seasonal staging and design team bringing the magic of the holidays to your home or office</p> -->
             <div class="  p-lg bg-primary-3 rounded-md">
                 <p class="text-primary-12 font-semibold mb-sm text-lg">Email Us</p>
                 <p class="text-primary-9">rachel@spruceseasonalstaging.com </p>

@@ -5,7 +5,7 @@
 <div class="w-full md:h-[640px] h-[calc(100vh-92px)] max-h-[1080px] px-xl flex-center flex-col-reverse md:flex-row justify-center md:justify-between md:space-x-xl">
     <div class="w-full md:w-7/12 text-center md:text-left">
         <h2 class="text-accent-11 text-lg md:text-2xl font-medium  mb-md">Servicing The Greater Seattle Area</h2>
-        <h3 class="marcellus text-primary-12 text-2xl md:text-5xl leading-tight mb-2xl">Transform your space with the magic of professionally styled decorations</h3>
+        <h3 class="marcellus text-primary-12 text-2xl md:text-5xl leading-tight mb-2xl">Transform your space with the magic of professionally styled decor</h3>
         <div class="flex-center flex-col md:flex-row space-y-md md:space-y-0 md:space-x-md">
             <Button>Book A Consultation</Button>
             <Button alternate>See Our Work</Button>
