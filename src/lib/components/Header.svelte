@@ -34,12 +34,6 @@
 		}
 	}
 
-	function resetHeaderStyle() {
-		headerDiv.style.backgroundColor = 'transparent';
-		headerDiv.style.borderBottomWidth = '0px';
-		headerDivWhite = false;
-	}
-
 	onMount(() => {
 		if (!browser) return;
 
@@ -47,18 +41,9 @@
 		updateScroll();
 
 		window.addEventListener('scroll', updateScroll);
-		window.addEventListener('resize', () => {
-			checkScreenWidth();
-			if (!isWideScreen) {
-				resetHeaderStyle();
-			} else {
-				updateScroll();
-			}
-		});
 
 		return () => {
 			window.removeEventListener('scroll', updateScroll);
-			window.removeEventListener('resize', checkScreenWidth);
 		};
 	});
 </script>

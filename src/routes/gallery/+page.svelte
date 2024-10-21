@@ -32,7 +32,7 @@
 	}
 </script>
 
-<div class="px-xl">
+<div class="px-lg md:px-xl">
 
 <div class=" py-3xl max-w-screen-xl mx-auto">
 	<h3 class="text-primary-12 text-4xl marcellus mb-2xl">Gallery</h3>
