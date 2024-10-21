@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Button from './Button.svelte';
 	import Input from './Input.svelte';
 	import Instagram from 'virtual:icons/mdi/instagram';
@@ -6,13 +6,21 @@
 	import Twitter from 'virtual:icons/mdi/twitter';
 	import InputLong from './InputLong.svelte';
 	import InputDropdown from './InputDropdown.svelte';
+	import { enhance } from '$app/forms';
+	import Check from 'virtual:icons/material-symbols/check-circle-rounded';
+	import Error from 'virtual:icons/material-symbols/error-rounded';
+
+	import type { ActionData } from '../../routes/$types';
+
+	export let form: ActionData;
+	let loading: boolean = false;
+	let formSubmitted = false;
 </script>
 
 <div class="px-xl">
 	<div class=" py-3xl max-w-screen-xl mx-auto" id="bookconsultation">
 		<h3 class="text-primary-12 text-4xl marcellus mb-2xl">Book A Consultation</h3>
 		<div class="flex flex-col space-y-2xl md:space-y-0 md:flex-row md:space-x-3xl justify-between">
-			
 			<div class="max-w-sm">
 				<img src="/LogoSVG.svg" class="w-32 mb-xl" />
 				<!-- <h4 class="font-semibold mb-md text-lg">Spruce - Seasonal Staging And Decor</h4> -->
@@ -31,7 +39,22 @@
 					</div>
 				</div>
 			</div>
-            <form class="flex flex-col space-y-md flex-1">
+			<form
+				class="flex flex-col space-y-md flex-1"
+				method="POST"
+				use:enhance={() => {
+					loading = true;
+
+					return ({ result, update }) => {
+						loading = false;
+
+						if (result.type === 'success') {
+							formSubmitted = true;
+						}
+						update();
+					};
+				}}
+			>
 				<div class="flex-center flex-col md:flex-row space-y-md md:space-y-0 md:space-x-md">
 					<Input label="First Name" placeholder="First Name" required />
 					<Input label="Last Name" placeholder="Last Name" required />
@@ -44,9 +67,30 @@
 					placeholder="Select Option"
 					options={['Select An Option', 'Social Media', 'Word Of Mouth', 'Google Search', 'Other']}
 				/>
-				<div class="mx-auto pt-md">
-					<Button>Submit Form</Button>
-				</div>
+
+				{#if !formSubmitted}
+					<div class="mx-auto pt-md">
+						<div class="w-[145px]">
+							<Button extended {loading}>Send Message</Button>
+						</div>
+					</div>
+				{/if}
+
+				{#if form?.success}
+					<div
+						class="flex-center space-x-sm text-primary-9 font-medium mt-md bg-primary-3 p-sm rounded-sm"
+					>
+						<Check class="text-lg" />
+						<p>Thanks for booking a consultation! We'll get back to you shortly</p>
+					</div>
+				{:else if form?.error}
+					<div
+						class="flex-center space-x-sm text-red font-medium mt-md bg-redlight p-sm rounded-sm"
+					>
+						<Error class="text-lg" />
+						<p>Sorry, we failed to send the message. Please email us directly instead.</p>
+					</div>
+				{/if}
 			</form>
 		</div>
 	</div>

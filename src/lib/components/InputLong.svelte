@@ -10,5 +10,5 @@
             <span class="text-black-11">(required)</span>
         {/if}
     </label>
-<textarea name={placeholder} rows="3" placeholder={placeholder} class="py-sm px-md border border-black-5 rounded-sm outline-none resize-none"/>
+<textarea name={label} rows="3" placeholder={placeholder} class="py-sm px-md border border-black-5 rounded-sm outline-none resize-none"/>
 </div>

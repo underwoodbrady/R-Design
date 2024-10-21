@@ -1,4 +1,4 @@
-<script>
+<script lang='ts'>
 	import BookConsultation from '$lib/components/BookConsultation.svelte';
 	import Gallery from '$lib/components/Gallery.svelte';
 	import Hero from '$lib/components/Hero.svelte';
@@ -9,7 +9,8 @@
     import Delivery from 'virtual:icons/mdi/truck-delivery-outline';
     import Decoration from 'virtual:icons/mdi/house-heart';
     import Storage from 'virtual:icons/mdi/stopwatch-secure-outline';
-
+	import type { ActionData } from './$types';
+	export let form: ActionData;
 </script>
 
 <Hero />
@@ -75,6 +76,6 @@
 	</ol>
 </div>
 <Gallery/>
-<BookConsultation/>
+<BookConsultation {form}/>
 <!-- <Services /> -->
 <!-- <RecentProjects /> -->

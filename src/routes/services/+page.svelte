@@ -1,10 +1,13 @@
 <script>
+	import { goto } from '$app/navigation';
 	import Button from '$lib/components/Button.svelte';
 </script>
 
 <div class="px-xl py-3xl max-w-screen-lg mx-auto">
 	<h3 class="text-primary-12 text-4xl marcellus mb-2xl text-center">Our Services</h3>
-	<div class="flex-center space-x-md mb-xl">
+	<div
+		class="relative z-10 flex-center flex-col md:flex-row space-y-lg md:space-y-0 md:space-x-md mb-xl"
+	>
 		<div class=" h-[440px] flex-1 bg-black-1 p-lg flex-center flex-col drop-shadow rounded-md">
 			<h2 class="text-3xl font-medium text-black-12 marcellus mb-xl">
 				<span class="text-[#C0C0C0]">Silver</span> Package
@@ -45,11 +48,17 @@
 			</p>
 		</div>
 	</div>
-	<div class="flex justify-center">
-		<Button>Book A Consultation</Button>
+	<div class="relative z-10 flex justify-center">
+		<Button
+			onClick={() => {
+				goto('/').then(() => {
+					document.getElementById('bookconsultation')?.scrollIntoView();
+				});
+			}}>Book A Consultation</Button
+		>
 	</div>
-	<div class="absolute inset-0 ">
+	<div class="absolute inset-0">
 		<img src="bottomleft.svg" alt="Staging" class="absolute -left-6 -bottom-4 w-28" />
-		<img src="bottomright.svg" alt="Staging" class="absolute -right-6 -bottom-4 w-28" />
+		<img src="bottomright.svg" alt="Staging" class="absolute -right-0 md:-right-6 -bottom-4 w-28" />
 	</div>
 </div>

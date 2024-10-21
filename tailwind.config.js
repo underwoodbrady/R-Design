@@ -50,7 +50,9 @@ export default {
 				10: '#818389',
 				11: '#626469',
 				12: '#1F2023'
-			}
+			},
+			red:'#E5484D',
+			redlight:'#FEEBEC'
 		},
 		extend: {
 			spacing: {
