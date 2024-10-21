@@ -7,6 +7,8 @@
 
 	$: currentPage = $page.url.pathname;
 
+	export let onSideMenuButtonPressed:()=>void; ()=>{};
+
 	let scrollY: number;
 	let headerDiv: HTMLElement;
 	let headerDivWhite: boolean;
@@ -86,8 +88,11 @@
 				}}>Hire Us</Button
 			>
 		</div>
-		<nav class="block lg:hidden">
-			<MenuIcon class="text-black-11 w-6 h-6" />
+		<nav class="block md:hidden">
+			<button on:click={onSideMenuButtonPressed}>
+
+				<MenuIcon class="text-black-11 w-6 h-6" />
+			</button>
 		</nav>
 	</nav>
 </header>

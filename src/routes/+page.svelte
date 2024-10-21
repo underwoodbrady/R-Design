@@ -13,7 +13,7 @@
 </script>
 
 <Hero />
-<div class="px-xl py-2xl mb-4xl bg-white max-w-screen-lg mx-auto">
+<div class="px-xl py-2xl md:mb-4xl bg-white max-w-screen-lg mx-auto">
 	<h3 class="text-black-12 text-4xl marcellus mb-lg">About Us</h3>
 	<p class="text-lg">
 		We are a full-service seasonal staging and design team bringing the magic of the holidays to
@@ -25,40 +25,40 @@
 	</p>
 
 </div>
-<div class="px-xl py-3xl bg-accent-3 mb-4xl">
+<div class="px-xl py-3xl bg-accent-3 md:mb-4xl">
 	<h3 class="text-accent-12 text-4xl marcellus mb-xl text-center">The Process</h3>
-	<div class="flex-center justify-between max-w-screen-xl mx-auto">
-		<div class="flex-center flex-col space-y-2">
+	<div class="grid grid-cols-2 gap-md md:flex-center md:justify-between max-w-screen-xl mx-auto uppercase">
+		<div class="flex-center flex-col space-y-md">
 			<Plan class="text-accent-12 w-20 h-20"/>
-			<p class="text-accent-12 text-lg font-semibold">Design Plan</p>
+			<p class="text-accent-12 text-lg font-medium ">Design Plan</p>
 		</div>
-		<div class="flex-center flex-col space-y-2">
+		<div class="flex-center flex-col space-y-md">
 			<Tree class="text-accent-12 w-20 h-20"/>
-			<p class="text-accent-12 text-lg font-semibold">Tree</p>
+			<p class="text-accent-12 text-lg font-medium">Tree</p>
 		</div>
-		<div class="flex-center flex-col space-y-2">
+		<div class="flex-center flex-col space-y-md">
 			<Lights class="text-accent-12 w-20 h-20"/>
-			<p class="text-accent-12 text-lg font-semibold">Lighting</p>
+			<p class="text-accent-12 text-lg font-medium">Lighting</p>
 		</div>
-		<div class="flex-center flex-col space-y-2">
+		<div class="flex-center flex-col space-y-md">
 			<Ornaments class="text-accent-12 w-20 h-20"/>
-			<p class="text-accent-12 text-lg font-semibold">Ornaments</p>
+			<p class="text-accent-12 text-lg font-medium">Ornaments</p>
 		</div>
-		<div class="flex-center flex-col space-y-2">
+		<div class="flex-center flex-col space-y-md">
 			<Delivery class="text-accent-12 w-20 h-20"/>
-			<p class="text-accent-12 text-lg font-semibold">Delivery</p>
+			<p class="text-accent-12 text-lg font-medium">Delivery</p>
 		</div>
-		<div class="flex-center flex-col space-y-2">
+		<div class="flex-center flex-col space-y-md">
 			<Decoration class="text-accent-12 w-20 h-20"/>
-			<p class="text-accent-12 text-lg font-semibold">Decoration</p>
+			<p class="text-accent-12 text-lg font-medium">Decoration</p>
 		</div>
-		<div class="flex-center flex-col space-y-2">
+		<div class="hidden md:flex-center flex-col space-y-md">
 			<Storage class="text-accent-12 w-20 h-20"/>
-			<p class="text-accent-12 text-lg font-semibold">Storage</p>
+			<p class="text-accent-12 text-lg font-medium">Storage</p>
 		</div>
 	</div>
 </div>
-<div class="px-xl py-2xl mb-4xl bg-white max-w-screen-lg mx-auto">
+<div class="px-xl py-2xl md:mb-4xl bg-white max-w-screen-lg mx-auto">
 	<h3 class="text-black-12 text-4xl marcellus mb-lg">How do I get started?</h3>
 	<ol class="list-decimal space-y-sm list-inside text-lg">
 		<li>

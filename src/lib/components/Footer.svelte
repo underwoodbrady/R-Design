@@ -6,10 +6,10 @@
     import Email from 'virtual:icons/mdi/email-outline';
 </script>
 
-<footer class="w-full  px-xl pt-3xl pb-lg bg-primary-12 ">
-    <div class="flex-flex-col max-w-screen-xl mx-auto">
-        <div class="flex justify-between">
-            <div>
+<footer class="relative z-20 w-full  px-xl pt-3xl pb-lg bg-primary-12 ">
+    <div class="flex flex-col max-w-screen-xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between">
+            <div class="mb-xl md:mb-0">
                 <img src="/LogoSVG(dark).svg" alt="Logo Dark" class="w-32 mb-lg"/>
                 <p class="text-primary-3 max-w-md">Seasonal staging and design team bringing the magic of the holidays to your home or office, located In Seattle, WA</p>
             </div>

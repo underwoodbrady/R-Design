@@ -4,9 +4,9 @@
 </script>
 
 <div
-	class="relative w-full  "
+	class="relative w-full  px-xl"
 >
-    <div class="relative z-10 px-xl flex-center flex-col-reverse md:flex-row justify-center md:justify-between md:space-x-xl max-w-screen-xl mx-auto md:h-[640px] h-[calc(100vh-92px)] max-h-[1080px]">
+    <div class="relative z-10  flex-center flex-col-reverse md:flex-row justify-center md:justify-between md:space-x-xl max-w-screen-xl mx-auto md:h-[640px] h-[calc(100vh-92px)] max-h-[1080px]">
         <div class="w-full md:w-7/12 text-center md:text-left">
             <h2 class="text-accent-11 text-lg md:text-2xl font-medium mb-md">
                 Servicing The Greater Seattle Area
@@ -31,11 +31,11 @@
         <div
             class="w-6/12 md:w-5/12 max-h-[520px] overflow-hidden flex items-center justify-center md:justify-end mb-2xl md:mb-0"
         >
-            <img src="/tree1.png" alt="Decorated Christmas Tree" class="object-cover" />
+            <img src="/tree8.png" alt="Decorated Christmas Tree" class="object-cover" />
         </div>
     </div>
 
-    <div class="absolute inset-0 ">
+    <div class="hidden md:block absolute inset-0 ">
 		<img src="topleft.svg" alt="Staging" class="absolute -left-8 -top-4 w-48" />
 		<img src="bottomleft.svg" alt="Staging" class="absolute -left-6 -bottom-4 w-28" />
 		<img src="bottomright.svg" alt="Staging" class="absolute -right-6 -bottom-4 w-28" />

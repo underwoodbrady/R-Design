@@ -48,4 +48,8 @@
 	<div class="flex justify-center">
 		<Button>Book A Consultation</Button>
 	</div>
+	<div class="absolute inset-0 ">
+		<img src="bottomleft.svg" alt="Staging" class="absolute -left-6 -bottom-4 w-28" />
+		<img src="bottomright.svg" alt="Staging" class="absolute -right-6 -bottom-4 w-28" />
+	</div>
 </div>
