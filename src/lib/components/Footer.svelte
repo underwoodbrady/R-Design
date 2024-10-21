@@ -13,7 +13,7 @@
                 <img src="/LogoSVG(dark).svg" alt="Logo Dark" class="w-32 mb-lg"/>
                 <p class="text-primary-3 max-w-md">Seasonal staging and design team bringing the magic of the holidays to your home or office, located In Seattle, WA</p>
             </div>
-            <div class="flex space-x-3xl">
+            <div class="flex space-x-2xl md:space-x-3xl">
                 <div>
                     <h3 class="text-primary-5 text-xl marcellus mb-md">Navigation</h3>
                     <ul class="text-primary-1 flex flex-col space-y-sm">

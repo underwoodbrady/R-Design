@@ -4,7 +4,7 @@
 
 </script>
 
-<div class="px-xl py-2xl md:py-3xl bg-white">
+<div class="px-lg md:px-xl py-2xl md:py-3xl bg-white">
     <h3 class="text-blue-12 text-4xl marcellus mb-2xl text-center">Our Recent Work</h3>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-md mb-xl w-full max-w-screen-xl mx-auto">
         <div class="w-full h-96 bg-primary-3 overflow-hidden">

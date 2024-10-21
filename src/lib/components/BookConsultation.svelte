@@ -17,7 +17,7 @@
 	let formSubmitted = false;
 </script>
 
-<div class="px-xl">
+<div class="px-lg md:px-xl">
 	<div class=" py-3xl max-w-screen-xl mx-auto" id="bookconsultation">
 		<h3 class="text-primary-12 text-4xl marcellus mb-2xl">Book A Consultation</h3>
 		<div class="flex flex-col space-y-2xl md:space-y-0 md:flex-row md:space-x-3xl justify-between">

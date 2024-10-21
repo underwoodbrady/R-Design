@@ -3,7 +3,7 @@
 	import Button from '$lib/components/Button.svelte';
 </script>
 
-<div class="px-xl py-3xl max-w-screen-lg mx-auto">
+<div class="px-lg md:px-xl py-3xl max-w-screen-lg mx-auto">
 	<h3 class="text-primary-12 text-4xl marcellus mb-2xl text-center">Our Services</h3>
 	<div
 		class="relative z-10 flex-center flex-col md:flex-row space-y-lg md:space-y-0 md:space-x-md mb-xl"

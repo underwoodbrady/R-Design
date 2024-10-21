@@ -14,9 +14,9 @@
 </script>
 
 <Hero />
-<div class="px-xl py-2xl md:mb-4xl bg-white max-w-screen-lg mx-auto">
+<div class=" px-lg md:px-xl py-2xl md:mb-4xl bg-white max-w-screen-lg mx-auto">
 	<h3 class="text-black-12 text-4xl marcellus mb-lg">About Us</h3>
-	<p class="text-lg">
+	<p class="text-lg text-black-11">
 		We are a full-service seasonal staging and design team bringing the magic of the holidays to
 		your home or office. From fully decorated custom Christmas trees, mantles, banisters and
 		entryways to Thanksgiving tablescapes, and more, Spruce offers a variety of services to help
@@ -26,7 +26,7 @@
 	</p>
 
 </div>
-<div class="px-xl py-3xl bg-accent-3 md:mb-4xl">
+<div class="px-lg md:px-xl py-3xl bg-accent-3 md:mb-4xl">
 	<h3 class="text-accent-12 text-4xl marcellus mb-xl text-center">The Process</h3>
 	<div class="grid grid-cols-2 gap-md md:flex-center md:justify-between max-w-screen-xl mx-auto uppercase">
 		<div class="flex-center flex-col space-y-md">
@@ -59,9 +59,9 @@
 		</div>
 	</div>
 </div>
-<div class="px-xl py-2xl md:mb-4xl bg-white max-w-screen-lg mx-auto">
+<div class="px-lg md:px-xl py-2xl md:mb-4xl bg-white max-w-screen-lg mx-auto">
 	<h3 class="text-black-12 text-4xl marcellus mb-lg">How do I get started?</h3>
-	<ol class="list-decimal space-y-sm list-inside text-lg">
+	<ol class="list-decimal space-y-sm list-inside text-lg text-black-11">
 		<li>
 			Call <span class="text-accent-9">123-456-7890</span> or use the
 			<button class="text-accent-9 underline" on:click={()=>{ document.getElementById('bookconsultation')?.scrollIntoView();}}>Contact Us</button> form for a free consultation. We'll respond within 24 hours to discuss your needs and arrange a meeting time.
@@ -79,3 +79,9 @@
 <BookConsultation {form}/>
 <!-- <Services /> -->
 <!-- <RecentProjects /> -->
+<style>
+	li::marker {
+		color: theme('colors.black.12');
+		font-weight: 500;
+	}
+</style>
