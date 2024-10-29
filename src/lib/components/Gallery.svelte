@@ -11,13 +11,14 @@
             <img src="/tree1.png" alt="Tree" class="object-cover w-full h-full"/>
         </div>
         <div class="w-full h-96 bg-primary-3 overflow-hidden">
-            <img src="/tree8.png" alt="Tree" class="object-cover w-full h-full"/>
-            
-        </div>
-        <div class="w-full h-96 bg-primary-3 overflow-hidden">
             <img src="/tree3.png" alt="Tree" class="object-cover w-full h-full"/>
             
         </div>
+        <div class="w-full h-96 bg-primary-3 overflow-hidden">
+            <img src="/tree8.png" alt="Tree" class="object-cover w-full h-full"/>
+            
+        </div>
+    
         <div class="w-full h-96 bg-primary-3 overflow-hidden">
             <img src="/tree4.png" alt="Tree" class="object-cover w-full h-full"/>
             

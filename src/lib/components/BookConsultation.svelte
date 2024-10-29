@@ -28,7 +28,7 @@
 				<div class="  p-lg bg-primary-3 rounded-md">
 					<p class="text-primary-12 font-semibold mb-sm text-lg">Email Us</p>
 					<p class="text-primary-9">rachel@spruceseasonalstaging.com</p>
-					<p class="text-primary-9 mb-lg">partner@spruceseasonalstaging.com</p>
+					<p class="text-primary-9 mb-lg">info@spruceseasonalstaging.com</p>
 					<p class="text-primary-12 font-semibold mb-sm text-lg">Call Us</p>
 					<p class="text-primary-9 mb-lg">123-456-7890</p>
 					<p class="text-primary-12 font-semibold mb-sm text-lg">Follow Us</p>
@@ -61,9 +61,9 @@
 				</div>
 				<Input label="Email" placeholder="Enter Email" required />
 				<Input label="Phone" placeholder="Enter Phone" />
-				<InputLong label="Tell Us What You Are Hoping For!" placeholder="" required />
+				<InputLong label="What's your holiday vision?" placeholder="" required />
 				<InputDropdown
-					label="How Did You Hear About Us?"
+					label="How did you hear about us?"
 					placeholder="Select Option"
 					options={['Select An Option', 'Social Media', 'Word Of Mouth', 'Google Search', 'Other']}
 				/>

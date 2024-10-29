@@ -49,24 +49,24 @@
 </script>
 
 <header
-	class="fixed left-0 top-0 w-full z-30 px-xl h-[92px] transition-colors duration-250 border-b-primary-5 max-lg:bg-primary-1"
+	class="fixed left-0 top-0 w-full z-30 px-xl h-[142px] transition-colors duration-250 border-b-primary-5 max-lg:bg-primary-1 bg-[#6E6E6E] text-white"
 	bind:this={headerDiv}
 >
 	<nav class="flex-center justify-between w-full h-full max-w-screen-xl mx-auto">
 		<a href="/">
-			<img src="/LogoSVG.svg" alt="Company Logo" class="w-32 mb-sm" />
+			<img src="/logonew.png" alt="Company Logo" class="w-28 mb-sm" />
 		</a>
 		<ul class="hidden md:flex-center space-x-xl font-medium">
 			<li
-				class="text-primary-12 hover:text-primary-11 transition-colors duration-100 {currentPage ==
+				class="text-primary-1 hover:text-primary-11 transition-colors duration-100 {currentPage ==
 				'/'
-					? ' border-b-2 border-primary-11'
+					? ' border-b-2 border-[#51867D]'
 					: ''}"
 			>
 				<a href="/">Home</a>
 			</li>
 			<li
-				class="text-primary-12 hover:text-primary-11 transition-colors duration-100 {currentPage ==
+				class="text-primary-1 hover:text-primary-11 transition-colors duration-100 {currentPage ==
 				'/gallery'
 					? ' border-b-2 border-primary-11'
 					: ''}"
@@ -74,7 +74,7 @@
 				<a href="/gallery">Gallery</a>
 			</li>
 			<li
-				class="text-primary-12 hover:text-primary-11 transition-colors duration-100 {currentPage ==
+				class="text-primary-1 hover:text-primary-11 transition-colors duration-100 {currentPage ==
 				'/services'
 					? ' border-b-2 border-primary-11'
 					: ''}"
@@ -82,7 +82,15 @@
 				<a href="/services">Services</a>
 			</li>
 			<li
-				class="text-primary-12 hover:text-primary-11 transition-colors duration-100 {currentPage ==
+				class="text-primary-1 hover:text-primary-11 transition-colors duration-100 {currentPage ==
+				'/services'
+					? ' border-b-2 border-primary-11'
+					: ''}"
+			>
+				<a href="/services">About Us</a>
+			</li>
+			<li
+				class="text-primary-1 hover:text-primary-11 transition-colors duration-100 {currentPage ==
 				'/blog'
 					? ' border-b-2 border-primary-11'
 					: ''}"
@@ -96,7 +104,7 @@
 					goto('/').then(() => {
 						document.getElementById('bookconsultation')?.scrollIntoView();
 					});
-				}}>Hire Us</Button
+				}}>Spruce Up My Home!</Button
 			>
 		</div>
 		<nav class="block md:hidden">

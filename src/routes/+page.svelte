@@ -66,9 +66,10 @@
 			Call <span class="text-accent-9">123-456-7890</span> or use the
 			<button class="text-accent-9 underline" on:click={()=>{ document.getElementById('bookconsultation')?.scrollIntoView();}}>Contact Us</button> form for a free consultation. We'll respond within 24 hours to discuss your needs and arrange a meeting time.
 		</li>
-		<li>We will visit you to go over your decorating design plan.</li>
+		<li>Set up your personalized free consultation to discuss your holiday or party decor needs by using the form below. </li>
+		<li>We will visit your home or office to go over your design plan and assess your unique space   </li>
 		<li>
-			Within 1-2 weeks after our meeting, we will develop and propose a design plan.
+			After our meeting, we will develop and propose a design plan.
 		</li>
 		<li>
 			Once the plan is approved, we'll add you to our installation calendar. Schedule early, as spots fill up quickly!
