@@ -10,56 +10,35 @@
     import Decoration from 'virtual:icons/mdi/house-heart';
     import Storage from 'virtual:icons/mdi/stopwatch-secure-outline';
 	import type { ActionData } from './$types';
+	import TitleText from '$lib/components/TitleText.svelte';
+	import Button from '$lib/components/Button.svelte';
 	export let form: ActionData;
 </script>
 
 <Hero />
-<div class=" px-lg md:px-xl py-2xl md:mb-4xl bg-white max-w-screen-lg mx-auto">
-	<h3 class="text-black-12 text-4xl marcellus mb-lg">About Us</h3>
-	<p class="text-lg text-black-11">
-		We are a full-service seasonal staging and design team bringing the magic of the holidays to
-		your home or office. From fully decorated custom Christmas trees, mantles, banisters and
-		entryways to Thanksgiving tablescapes, and more, Spruce offers a variety of services to help
-		take the stress out of your holiday decorating. From planning and shopping of decor to go with
-		your existing pieces to complete set-up, take down and storage of your decor for the following
-		year.
-	</p>
+<div class=" px-lg md:px-xl py-3xl md:my-3xl bg-accent-3 ">
+	<div class="max-w-screen-lg mx-auto flex space-x-3xl">
+		<div>
+			<TitleText text="About Us"/>
+			<p class="text-lg text-black-11">
+				We are a full-service seasonal staging and design team bringing the magic of the holidays to
+				your home or office. From fully decorated custom Christmas trees, mantles, banisters and
+				entryways to Thanksgiving tablescapes, and more, Spruce offers a variety of services to help
+				take the stress out of your holiday decorating. From planning and shopping of decor to go with
+				your existing pieces to complete set-up, take down and storage of your decor for the following
+				year.
+			</p>
+			<Button alternate>More About Us</Button>
+		</div>
+	
+		<img src="/us.jpg" alt="A picture of us" class="max-w-[520px]"/>
+	</div>
+
 
 </div>
-<div class="px-lg md:px-xl py-3xl bg-accent-3 md:mb-4xl">
-	<h3 class="text-accent-12 text-4xl marcellus mb-xl text-center">The Process</h3>
-	<div class="grid grid-cols-2 gap-md md:flex-center md:justify-between max-w-screen-xl mx-auto uppercase">
-		<div class="flex-center flex-col space-y-md">
-			<Plan class="text-accent-12 w-20 h-20"/>
-			<p class="text-accent-12 text-lg font-medium ">Design Plan</p>
-		</div>
-		<div class="flex-center flex-col space-y-md">
-			<Tree class="text-accent-12 w-20 h-20"/>
-			<p class="text-accent-12 text-lg font-medium">Tree</p>
-		</div>
-		<div class="flex-center flex-col space-y-md">
-			<Lights class="text-accent-12 w-20 h-20"/>
-			<p class="text-accent-12 text-lg font-medium">Lighting</p>
-		</div>
-		<div class="flex-center flex-col space-y-md">
-			<Ornaments class="text-accent-12 w-20 h-20"/>
-			<p class="text-accent-12 text-lg font-medium">Ornaments</p>
-		</div>
-		<div class="flex-center flex-col space-y-md">
-			<Delivery class="text-accent-12 w-20 h-20"/>
-			<p class="text-accent-12 text-lg font-medium">Delivery</p>
-		</div>
-		<div class="flex-center flex-col space-y-md">
-			<Decoration class="text-accent-12 w-20 h-20"/>
-			<p class="text-accent-12 text-lg font-medium">Decoration</p>
-		</div>
-		<div class="hidden md:flex-center flex-col space-y-md">
-			<Storage class="text-accent-12 w-20 h-20"/>
-			<p class="text-accent-12 text-lg font-medium">Storage</p>
-		</div>
-	</div>
-</div>
-<div class="px-lg md:px-xl py-2xl md:mb-4xl bg-white max-w-screen-lg mx-auto">
+
+<div class=" px-lg md:px-xl py-3xl md:mb-4xl ">
+	<div class="max-w-screen-lg mx-auto">
 	<h3 class="text-black-12 text-4xl marcellus mb-lg">How do I get started?</h3>
 	<ol class="list-decimal space-y-sm list-inside text-lg text-black-11">
 		<li>
@@ -75,6 +54,7 @@
 			Once the plan is approved, we'll add you to our installation calendar. Schedule early, as spots fill up quickly!
 		</li>
 	</ol>
+	</div>
 </div>
 <Gallery/>
 <BookConsultation {form}/>

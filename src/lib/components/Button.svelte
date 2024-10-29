@@ -9,10 +9,10 @@
 </script>
 
 <button
-	class=" px-md py-sm rounded-sm font-medium border-2 {extended ? ' w-full flex justify-center' : ''}  {alternate
-		? 'text-primary-9 hover:text-primary-10 active:text-primary-11'
+	class=" px-lg py-md  font-medium border-2 text-sm {extended ? ' w-full flex justify-center' : ''}  {alternate
+		? 'text-primary-3 hover:text-primary-4 active:text-primary-5'
 		: accent ? 'bg-accent-9 hover:bg-accent-10 active:bg-accent-11 text-accent-1 border-accent-9 hover:border-accent-10 active:border-accent-11'
-		: 'bg-[#BCDBD6] hover:bg-primary-10 active:bg-primary-11 text-black-12 border-[#BCDBD6] hover:border-primary-10 active:border-primary-11'}"
+		: 'bg-primary-3 hover:bg-primary-4 active:bg-primary-5 text-primary-12 border-primary-3 hover:border-primary-4 active:border-primary-5'}"
 		on:click = {onClick}
 >
 	{#if loading}

@@ -5,98 +5,63 @@
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { browser } from '$app/environment';
+	import HeaderLink from './HeaderLink.svelte';
 
 	$: currentPage = $page.url.pathname;
 
 	export let onSideMenuButtonPressed: () => void = () => {};
 
-	let scrollY: number;
-	let headerDiv: HTMLElement;
-	let headerDivWhite: boolean;
-	let isWideScreen: boolean = false;
+	// let scrollY: number;
+	// let headerDiv: HTMLElement;
+	// let headerDivWhite: boolean;
+	// let isWideScreen: boolean = false;
 
-	function checkScreenWidth() {
-		isWideScreen = window.innerWidth >= 1064;
-	}
+	// function checkScreenWidth() {
+	// 	isWideScreen = window.innerWidth >= 1064;
+	// }
 
-	function updateScroll() {
-		if (!isWideScreen) return;
+	// function updateScroll() {
+	// 	if (!isWideScreen) return;
 
-		scrollY = window.scrollY;
-		if (scrollY > 92 && !headerDivWhite) {
-			headerDiv.style.backgroundColor = '#fcfefd';
-			headerDiv.style.borderBottomWidth = '1px';
-			headerDivWhite = true;
-		} else if (scrollY < 92 && headerDivWhite) {
-			headerDiv.style.backgroundColor = 'transparent';
-			headerDiv.style.borderBottomWidth = '0px';
-			headerDivWhite = false;
-		}
-	}
+	// 	scrollY = window.scrollY;
+	// 	if (scrollY > 92 && !headerDivWhite) {
+	// 		headerDiv.style.backgroundColor = '#fcfefd';
+	// 		headerDiv.style.borderBottomWidth = '1px';
+	// 		headerDivWhite = true;
+	// 	} else if (scrollY < 92 && headerDivWhite) {
+	// 		headerDiv.style.backgroundColor = 'transparent';
+	// 		headerDiv.style.borderBottomWidth = '0px';
+	// 		headerDivWhite = false;
+	// 	}
+	// }
 
-	onMount(() => {
-		if (!browser) return;
+	// onMount(() => {
+	// 	if (!browser) return;
 
-		checkScreenWidth();
-		updateScroll();
+	// 	checkScreenWidth();
+	// 	updateScroll();
 
-		window.addEventListener('scroll', updateScroll);
+	// 	window.addEventListener('scroll', updateScroll);
 
-		return () => {
-			window.removeEventListener('scroll', updateScroll);
-		};
-	});
+	// 	return () => {
+	// 		window.removeEventListener('scroll', updateScroll);
+	// 	};
+	// });
 </script>
 
 <header
-	class="fixed left-0 top-0 w-full z-30 px-xl h-[142px] transition-colors duration-250 border-b-primary-5 max-lg:bg-primary-1 bg-[#6E6E6E] text-white"
-	bind:this={headerDiv}
+	class="fixed left-0 top-0 w-full z-30 px-xl h-[144px] transition-colors duration-250 border-b-primary-5 max-lg:bg-primary-1 bg-[#737373] text-white"
 >
 	<nav class="flex-center justify-between w-full h-full max-w-screen-xl mx-auto">
 		<a href="/">
-			<img src="/logonew.png" alt="Company Logo" class="w-28 mb-sm" />
+			<img src="/spruce-final-1.png" alt="Company Logo" class="w-40 mb-sm" />
 		</a>
 		<ul class="hidden md:flex-center space-x-xl font-medium">
-			<li
-				class="text-primary-1 hover:text-primary-11 transition-colors duration-100 {currentPage ==
-				'/'
-					? ' border-b-2 border-[#51867D]'
-					: ''}"
-			>
-				<a href="/">Home</a>
-			</li>
-			<li
-				class="text-primary-1 hover:text-primary-11 transition-colors duration-100 {currentPage ==
-				'/gallery'
-					? ' border-b-2 border-primary-11'
-					: ''}"
-			>
-				<a href="/gallery">Gallery</a>
-			</li>
-			<li
-				class="text-primary-1 hover:text-primary-11 transition-colors duration-100 {currentPage ==
-				'/services'
-					? ' border-b-2 border-primary-11'
-					: ''}"
-			>
-				<a href="/services">Services</a>
-			</li>
-			<li
-				class="text-primary-1 hover:text-primary-11 transition-colors duration-100 {currentPage ==
-				'/services'
-					? ' border-b-2 border-primary-11'
-					: ''}"
-			>
-				<a href="/services">About Us</a>
-			</li>
-			<li
-				class="text-primary-1 hover:text-primary-11 transition-colors duration-100 {currentPage ==
-				'/blog'
-					? ' border-b-2 border-primary-11'
-					: ''}"
-			>
-				<a href="/blog">Blog</a>
-			</li>
+			<HeaderLink text="Home" href="/" {currentPage}/>
+			<HeaderLink text="Gallery" href="/gallery" {currentPage}/>
+			<HeaderLink text="Services" href="/services" {currentPage}/>
+			<HeaderLink text="About Us" href="/aboutus" {currentPage}/>
+			<HeaderLink text="Blog" href="/blog" {currentPage}/>			
 		</ul>
 		<div class="hidden md:flex-center">
 			<Button
