@@ -19,7 +19,7 @@
 	}
 </script>
 <Header onSideMenuButtonPressed={openSideMenu}/>
-<main class="mt-[92px] relative">
+<main class="mt-[144px] relative">
 	<slot />
 </main>
 <Footer />

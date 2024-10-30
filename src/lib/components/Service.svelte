@@ -1,9 +1,12 @@
 <script lang="ts">
-    export let title:string;
     export let text:string;
+    export let href:string = "/";
 </script>
-<div class="crimson-text">
-    <slot/>
-    <h4 class="font-bold text-iris-12 text-3xl text-center mb-3">{title}</h4>
-    <p class=" text-lg text-mauve-11">{text}</p>
-</div>
+
+<a {href} class=" flex-1">
+    <div class="h-[440px] w-full object-cover overflow-hidden mb-lg">
+        <slot/>
+
+    </div>
+    <p class="text-center font-semibold arapey text-2xl">{text}</p>
+</a>

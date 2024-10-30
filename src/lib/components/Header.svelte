@@ -50,7 +50,7 @@
 </script>
 
 <header
-	class="fixed left-0 top-0 w-full z-30 px-xl h-[144px] transition-colors duration-250 border-b-primary-5 max-lg:bg-primary-1 bg-[#737373] text-white"
+	class="fixed left-0 top-0 w-full z-30 px-xl h-[144px] transition-colors duration-250 border-b-primary-5 max-lg:bg-primary-1 bg-[#737373] text-white drop-shadow"
 >
 	<nav class="flex-center justify-between w-full h-full max-w-screen-xl mx-auto">
 		<a href="/">

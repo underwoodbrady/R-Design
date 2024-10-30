@@ -12,15 +12,16 @@
 	import type { ActionData } from './$types';
 	import TitleText from '$lib/components/TitleText.svelte';
 	import Button from '$lib/components/Button.svelte';
+	import JoinMailingList from '$lib/components/JoinMailingList.svelte';
 	export let form: ActionData;
 </script>
 
 <Hero />
-<div class=" px-lg md:px-xl py-3xl md:my-3xl bg-accent-3 ">
+<div class=" px-lg md:px-xl  md:my-3xl bg-accent-3 max-h-[520px] overflow-hidden">
 	<div class="max-w-screen-lg mx-auto flex space-x-3xl">
-		<div>
+		<div class="py-3xl">
 			<TitleText text="About Us"/>
-			<p class="text-lg text-black-11">
+			<p class="text-lg text-black-11 mb-lg">
 				We are a full-service seasonal staging and design team bringing the magic of the holidays to
 				your home or office. From fully decorated custom Christmas trees, mantles, banisters and
 				entryways to Thanksgiving tablescapes, and more, Spruce offers a variety of services to help
@@ -28,18 +29,18 @@
 				your existing pieces to complete set-up, take down and storage of your decor for the following
 				year.
 			</p>
-			<Button alternate>More About Us</Button>
+			<Button accent>Meet The Team</Button>
 		</div>
 	
-		<img src="/us.jpg" alt="A picture of us" class="max-w-[520px]"/>
+		<img src="/us.jpg" alt="A picture of us" class="max-w-[520px] object-cover"/>
 	</div>
 
 
 </div>
 
-<div class=" px-lg md:px-xl py-3xl md:mb-4xl ">
+<div class=" px-lg md:px-xl py-3xl md:mb-3xl ">
 	<div class="max-w-screen-lg mx-auto">
-	<h3 class="text-black-12 text-4xl marcellus mb-lg">How do I get started?</h3>
+		<TitleText text="The Process"/>
 	<ol class="list-decimal space-y-sm list-inside text-lg text-black-11">
 		<li>
 			Call <span class="text-accent-9">123-456-7890</span> or use the
@@ -57,7 +58,8 @@
 	</div>
 </div>
 <Gallery/>
-<BookConsultation {form}/>
+<JoinMailingList/>
+<!-- <BookConsultation {form}/> -->
 <!-- <Services /> -->
 <!-- <RecentProjects /> -->
 <style>

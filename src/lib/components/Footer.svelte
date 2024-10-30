@@ -15,7 +15,7 @@
             </div>
             <div class="flex space-x-2xl md:space-x-3xl">
                 <div>
-                    <h3 class="text-primary-5 text-xl marcellus mb-md">Navigation</h3>
+                    <h3 class="text-primary-5 text-2xl arapey font-semibold mb-md">Navigation</h3>
                     <ul class="text-primary-1 flex flex-col space-y-sm">
                         <li class="hover:text-primary-9 duration-100 transition-colors"><a href="/">
                             Home
@@ -28,16 +28,16 @@
                 </div>
                 <!--  w-[205px] h-[41px] -->
                 <div>
-                    <div class="mb-lg">
+                    <!-- <div class="mb-lg">
                         <h3 class="text-primary-5 text-xl marcellus mb-md">Join Our Mailing List</h3>
                         <div class="relative w-[205px] h-[41px] border border-primary-5 rounded-sm">
                             <input name='email' placeholder="Enter Email" class=" pl-2xl absolute inset-0 rounded-sm outline-none bg-transparent text-primary-1"/>   
                             <Email class="absolute left-3 top-[10px] text-primary-5"/>
                         </div>
                         
-                    </div>
+                    </div> -->
                     <div>
-                        <h3 class="text-primary-5 text-xl marcellus mb-md">Follow Us</h3>
+                        <h3 class="text-primary-5 text-2xl arapey font-semibold mb-md">Follow Us</h3>
                         <div class="flex-center space-x-md text-primary-1 text-lg">
                             <Instagram class="hover:text-primary-9 duration-100 transition-colors"/>
                             <Facebook class="hover:text-primary-9 duration-100 transition-colors"/>
