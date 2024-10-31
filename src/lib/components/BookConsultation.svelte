@@ -19,10 +19,10 @@
 
 <div class="px-lg md:px-xl">
 	<div class=" py-3xl max-w-screen-xl mx-auto" id="bookconsultation">
-		<h3 class="text-primary-12 text-4xl marcellus mb-2xl">Book A Consultation</h3>
-		<div class="flex flex-col space-y-2xl md:space-y-0 md:flex-row md:space-x-3xl justify-between">
+		<h3 class="text-black-12 text-4xl arapey font-semibold mb-2xl">Book A Consultation</h3>
+		<div class="flex flex-col-reverse space-y-2xl md:space-y-0 md:flex-row md:space-x-3xl justify-between">
 			<div class="max-w-sm">
-				<img src="/LogoSVG.svg" class="w-32 mb-xl" />
+				<!-- <img src="/LogoSVG.svg" class="w-32 mb-xl" /> -->
 				<!-- <h4 class="font-semibold mb-md text-lg">Spruce - Seasonal Staging And Decor</h4> -->
 				<!-- <p class="text-black-11 mb-lg">We are a full-service seasonal staging and design team bringing the magic of the holidays to your home or office</p> -->
 				<div class="  p-lg bg-primary-3 rounded-md">
@@ -70,8 +70,8 @@
 
 				{#if !formSubmitted}
 					<div class="mx-auto pt-md">
-						<div class="w-[145px]">
-							<Button extended {loading}>Send Message</Button>
+						<div class="w-[165px]">
+							<Button extended accent {loading}>Send Message</Button>
 						</div>
 					</div>
 				{/if}

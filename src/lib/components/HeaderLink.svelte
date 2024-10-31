@@ -5,7 +5,7 @@
 </script>
 
 <li
-	class="text-black-8 hover:text-black-7 transition-colors duration-100 uppercase font-medium {currentPage == `${href}`
+	class="text-black-7 hover:text-black-6 transition-colors duration-100 uppercase font-medium {currentPage == `${href}`
 		? ' text-primary-1'
 		: ''}"
 >

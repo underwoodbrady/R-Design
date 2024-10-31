@@ -50,7 +50,7 @@
 </script>
 
 <header
-	class="fixed left-0 top-0 w-full z-30 px-xl h-[144px] transition-colors duration-250 border-b-primary-5 max-lg:bg-primary-1 bg-[#737373] text-white drop-shadow"
+	class="fixed left-0 top-0 w-full z-30 px-xl h-[144px] transition-colors duration-250 border-b-primary-5  bg-[#737373] text-white drop-shadow"
 >
 	<nav class="flex-center justify-between w-full h-full max-w-screen-xl mx-auto">
 		<a href="/">
@@ -66,15 +66,13 @@
 		<div class="hidden md:flex-center">
 			<Button
 				onClick={() => {
-					goto('/').then(() => {
-						document.getElementById('bookconsultation')?.scrollIntoView();
-					});
+					goto('/bookconsultation');
 				}}>Spruce Up My Home!</Button
 			>
 		</div>
 		<nav class="block md:hidden">
 			<button on:click={onSideMenuButtonPressed}>
-				<MenuIcon class="text-black-11 w-6 h-6" />
+				<MenuIcon class="text-black-1 w-8 h-8" />
 			</button>
 		</nav>
 	</nav>

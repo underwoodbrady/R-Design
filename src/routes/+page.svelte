@@ -17,8 +17,8 @@
 </script>
 
 <Hero />
-<div class=" px-lg md:px-xl  md:my-3xl bg-accent-3 max-h-[520px] overflow-hidden">
-	<div class="max-w-screen-lg mx-auto flex space-x-3xl">
+<div class=" px-lg md:px-xl  md:my-4xl bg-accent-3 md:max-h-[520px] overflow-hidden">
+	<div class="max-w-screen-lg mx-auto flex flex-col md:flex-row space-x-3xl">
 		<div class="py-3xl">
 			<TitleText text="About Us"/>
 			<p class="text-lg text-black-11 mb-lg">
@@ -32,16 +32,16 @@
 			<Button accent>Meet The Team</Button>
 		</div>
 	
-		<img src="/us.jpg" alt="A picture of us" class="max-w-[520px] object-cover"/>
+		<img src="/us.jpg" alt="Our Team" class="max-w-[520px] object-cover hidden md:block"/>
 	</div>
 
 
 </div>
 
-<div class=" px-lg md:px-xl py-3xl md:mb-3xl ">
+<div class=" px-lg md:px-xl md:pb-4xl md:pt-0 pb-3xl pt-3xl">
 	<div class="max-w-screen-lg mx-auto">
 		<TitleText text="The Process"/>
-	<ol class="list-decimal space-y-sm list-inside text-lg text-black-11">
+	<ol class="list-decimal space-y-md list-inside text-lg text-black-11">
 		<li>
 			Call <span class="text-accent-9">123-456-7890</span> or use the
 			<button class="text-accent-9 underline" on:click={()=>{ document.getElementById('bookconsultation')?.scrollIntoView();}}>Contact Us</button> form for a free consultation. We'll respond within 24 hours to discuss your needs and arrange a meeting time.

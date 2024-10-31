@@ -14,7 +14,7 @@ import TitleText from "./TitleText.svelte";
 
             </div>
             <div class="flex-1">
-                <button class="h-[42px] px-lg font-medium text-sm bg-[#737373] hover:bg-black-10 active:bg-black-11 text-accent-1">
+                <button class="h-[42px] px-lg font-medium text-sm bg-accent-9 hover:bg-accent-10 active:bg-accent-11 text-accent-1">
                     Join List
                 </button>
             </div>

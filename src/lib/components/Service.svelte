@@ -8,5 +8,5 @@
         <slot/>
 
     </div>
-    <p class="text-center font-semibold arapey text-2xl">{text}</p>
+    <p class="text-center font-semibold arapey text-2xl text-primary-12">{text}</p>
 </a>

@@ -38,7 +38,7 @@
 		class:closeBackground={!sideMenuOpen}
 	>
 		<aside
-			class={'absolute w-64 right-0 top-0 h-full bg-black-12 text-black-9 py-lg flex flex-col justify-between '}
+			class={'absolute w-64 right-0 top-0 h-full bg-black-11 text-black-7 py-lg flex flex-col justify-between '}
 			class:openSidemenu={sideMenuOpen}
 			class:closeSidemenu={!sideMenuOpen}
 		>
@@ -51,7 +51,7 @@
 						<li class={currentPage == '/' ? 'text-white' : ''}>
 							<button
 								on:click={() => closeAndNav('/')}
-								class="py-sm px-lg border-b border-b-[#363A3F] w-full text-left"
+								class="py-sm px-lg border-b border-b-black-10 w-full text-left"
 							>
 								Home
 							</button>
@@ -59,7 +59,7 @@
 						<li class={currentPage == '/gallery' ? 'text-white' : ''}>
 							<button
 								on:click={() => closeAndNav('/gallery')}
-								class="py-sm px-lg border-b border-b-[#363A3F] w-full text-left"
+								class="py-sm px-lg border-b border-b-black-10 w-full text-left"
 							>
 								Gallery
 							</button>
@@ -67,15 +67,23 @@
 						<li class={currentPage == '/services' ? 'text-white' : ''}>
 							<button
 								on:click={() => closeAndNav('/services')}
-								class="py-sm px-lg border-b border-b-[#363A3F] w-full text-left"
+								class="py-sm px-lg border-b border-b-black-10 w-full text-left"
 							>
 								Services
+							</button>
+						</li>
+						<li class={currentPage == '/aboutus' ? 'text-white' : ''}>
+							<button
+								on:click={() => closeAndNav('/aboutus')}
+								class="py-sm px-lg border-b border-b-black-10 w-full text-left"
+							>
+								About Us
 							</button>
 						</li>
 						<li class={currentPage == '/blog' ? 'text-white' : ''}>
 							<button
 								on:click={() => closeAndNav('/blog')}
-								class="py-sm px-lg border-b border-b-[#363A3F] w-full text-left"
+								class="py-sm px-lg border-b border-b-black-10 w-full text-left"
 							>
 								Blog
 							</button>
@@ -106,9 +114,7 @@
                 extended
 					onClick={() => {
 						closeSideMenu();
-						goto('/').then(() => {
-							document.getElementById('bookconsultation')?.scrollIntoView();
-						});
+						goto('/bookconsultation');
 					}}
 				>Book Consultation</Button>
 			</div>

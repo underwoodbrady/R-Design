@@ -12,17 +12,18 @@
             <div class="absolute w-full h-full bg-black/45 z-10"/>
         </div>
         <div class="relative z-20 w-full text-center flex-center flex-col justify-center">
-            <h2 class="text-black-1 md:text-accent-1 text-lg md:text-xl font-medium uppercase mb-sm md:mb-sm">
+            <h2 class="text-accent-5 md:text-ccent-5 text-lg md:text-xl font-medium uppercase mb-sm md:mb-sm">
                 Available Now
             </h2>
-            <h3 class="arapey text-black-1 md:text-primary-1 text-3xl md:text-5xl leading-tight mb-2xl md:mb-xl">
-                Holiday 2024
+            <h3 class="arapey font-semibold text-black-1 md:text-primary-1 text-3xl md:text-5xl leading-tight mb-2xl md:mb-xl">
+                Professional Christmas Decor
             </h3>
             <div class="flex-center flex-col md:flex-row space-y-md md:space-y-0 md:space-x-md">
                 <Button
+                accent
                     onClick={() => {
-                        document.getElementById('bookconsultation')?.scrollIntoView();
-                    }}>Book A Consultation</Button
+					goto('/bookconsultation');
+                }}>Book A Consultation</Button
                 >
          
        
