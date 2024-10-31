@@ -11,15 +11,15 @@
 	}
 
 	let images: GalleryImage[] = [
-		{ src: '/tree1.png', categories: ['All', 'Christmas'] },
-		{ src: '/tree2.png', categories: ['All', 'Christmas'] },
-		{ src: '/tree3.png', categories: ['All', 'Christmas'] },
+		{ src: '/tree1.png', categories: ['All', 'Traditional'] },
+		{ src: '/tree2.png', categories: ['All', 'Traditional'] },
+		{ src: '/tree3.png', categories: ['All', 'Traditional'] },
 		{ src: '/tree4.png', categories: ['All', 'Whimsical'] },
-		{ src: '/tree6.png', categories: ['All', 'Theme Parties'] },
-		{ src: '/tree7.png', categories: ['All', 'Theme Parties'] },
+		// { src: '/tree6.png', categories: ['All', 'Theme Parties'] },
+		// { src: '/tree7.png', categories: ['All', 'Theme Parties'] },
 		{ src: '/tree8.png', categories: ['All', 'Whimsical'] },
-		{ src: '/tree9.png', categories: ['All', 'Christmas'] },
-		{ src: '/tree10.png', categories: ['All', 'Christmas'] },
+		{ src: '/tree9.png', categories: ['All', 'Traditional'] },
+		{ src: '/tree10.png', categories: ['All', 'Traditional'] },
 		{ src: '/tree11.png', categories: ['All', 'Theme Parties'] },
 	];
 
@@ -35,7 +35,7 @@
 <div class="px-lg md:px-xl">
 
 <div class=" py-3xl max-w-screen-xl mx-auto ">
-	<div class="h-[720px] overflow-y-auto">
+	<div class="h-[720px] overflow-y-auto mb-3xl">
 		<h3 class="text-primary-12 text-4xl arapey font-semibold mb-2xl">Our Holiday Styles</h3>
 		<div class="flex flex-col md:flex-row justify-between space-y-2xl md:space-y-0 md:space-x-3xl mb-3xl">
 			<div class="whitespace-nowrap">
@@ -87,6 +87,35 @@
 	<div class="flex flex-col ">
 
 		<h4 class="text-2xl font-medium text-black-11 mb-md">Seahawks Theme Party</h4>
+		<p class="mb-lg">Details here</p>
+		<h4 class="text-2xl font-medium text-black-11 mb-md">Other Theme Party</h4>
+		<p>Details here</p>
 	</div>
 </div>
 </div>
+
+<style>
+	/* For Webkit browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 8px;  /* Width of the scroll bar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;  /* Track background */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);  /* Scroll bar color with opacity */
+  border-radius: 4px;  /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.7);  /* Darker on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;  /* "auto" or "thin" */
+  scrollbar-color: rgba(0, 0, 0, 0.5) transparent;  /* thumb and track color */
+}
+</style>
